@@ -1,68 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Have a Great Day!</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
-            color: #333;
-            text-align: center;
-        }
-
-        .container {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        #clock {
-            font-size: 4rem;
-            font-weight: bold;
-            color: #4a4e69;
-            margin: 20px 0;
-        }
-
-        p {
-            font-size: 1.5rem;
-            font-style: italic;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meg Kowalew — About</title>
+  <meta name="description" content="Product leader across SaaS and marketplaces. About, work, and contact." />
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-title">
+          <b>Meg Kowalew</b>
+          <span>Product leader • SaaS • Marketplaces</span>
+        </div>
+      </a>
 
-    <div class="container">
-        <h1>Hello!</h1>
-        <div id="clock">00:00:00</div>
-        <p>Wishing everyone a truly great day! ✨</p>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="pill" data-nav href="index.html">About</a>
+        <a class="pill" data-nav href="work.html">Work</a>
+        <a class="pill" data-nav href="contact.html">Contact</a>
+        <a class="btn" href="assets/MegKowalew_CV.pdf" download>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3v10m0 0l4-4m-4 4l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Download CV
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<section class="hero">
+  <div class="hero-grid">
+    <div class="avatar">
+      <!-- Replace profile-placeholder.svg with your own photo: assets/profile.jpg -->
+      <img src="assets/profile-placeholder.svg" alt="Profile photo placeholder" />
     </div>
 
-    <script>
-        function updateTime() {
-            const now = new Date();
-            const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-            document.getElementById('clock').textContent = timeString;
-        }
+    <div>
+      <div class="kicker">About</div>
+      <h1>Product leader (15 years) across SaaS & marketplaces.</h1>
+      <p class="lede">
+        I lead cross-functional teams from vision to rollout to improve customer experience and commercial outcomes.
+        Most recently I owned the product experience for realestate.co.nz’s top-rated consumer app and the platform behind it.
+      </p>
 
-        // Update the clock every second
-        setInterval(updateTime, 1000);
-        
-        // Run immediately on load
-        updateTime();
-    </script>
+      <div class="tagrow" aria-label="Focus areas">
+        <span class="tag">Strategy & roadmaps</span>
+        <span class="tag">Discovery & research</span>
+        <span class="tag">Growth & engagement</span>
+        <span class="tag">Payments & platforms</span>
+        <span class="tag">AI recommendations</span>
+      </div>
+
+      <div class="metrics" aria-label="Selected outcomes">
+        <div class="metric">
+          <b>4.6★</b>
+          <span>App Store rating (from 2.0)</span>
+        </div>
+        <div class="metric">
+          <b>20×</b>
+          <span>Engagement uplift (saved/shared)</span>
+        </div>
+        <div class="metric">
+          <b>10%+ MoM</b>
+          <span>User growth after app relaunch</span>
+        </div>
+      </div>
+    </div>
+
+    <aside class="quick">
+      <h3>Quick profile</h3>
+      <ul>
+        <li>Melbourne-based</li>
+        <li>GM Product — realestate.co.nz (2022–2025)</li>
+        <li>Director / GPM — Pushpay (payments + engagement)</li>
+        <li>Built product practice: research + product marketing</li>
+        <li>Category/Shopper research background (eye-tracking, quant)</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="grid">
+  <section class="card">
+    <div class="section-title">
+      <h2>What I’m known for</h2>
+      <span>clear direction, crisp execution, measurable impact</span>
+    </div>
+    <ul class="list">
+      <li>Turning ambiguous problems into an aligned roadmap teams can ship against.</li>
+      <li>Designing journeys that reduce friction and lift conversion.</li>
+      <li>Building product capability: research, product marketing, and objective-driven planning.</li>
+      <li>Scaling multi-product portfolios (incl. payments) with strong operating rhythms.</li>
+    </ul>
+
+    <hr class="sep" />
+
+    <details>
+      <summary>
+        Tools <span class="summary-muted">how I work day-to-day</span>
+      </summary>
+      <div class="details-content">
+        <div class="split">
+          <div>
+            <b>Product</b>
+            <ul class="list">
+              <li>North-star metrics, OKRs, outcome roadmaps</li>
+              <li>Problem framing, assumptions mapping, experiment design</li>
+              <li>Pricing/value gating, lifecycle & retention loops</li>
+            </ul>
+          </div>
+          <div>
+            <b>Research & analytics</b>
+            <ul class="list">
+              <li>Qual interviews, usability testing, diary studies</li>
+              <li>Quant analysis, funnel & cohort review</li>
+              <li>Operational constraints & stakeholder alignment</li>
+            </ul>
+          </div>
+        </div>
+        <p style="margin:10px 0 0;">
+          Want this to be more specific? Replace these with the actual tools you use (e.g., Jira, Linear, Amplitude, GA4, etc.).
+        </p>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        Education & courses <span class="summary-muted">high-level, not the whole transcript</span>
+      </summary>
+      <div class="details-content">
+        <ul class="list">
+          <li><b>Psychology</b> — Adam Mickiewicz University</li>
+          <li><b>Masters in Management & Marketing</b> — Poznan University of Economics</li>
+          <li><b>Selected courses</b> — add short list (e.g., AI strategy, leadership, analytics)</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        Speaking / media <span class="summary-muted">add links when ready</span>
+      </summary>
+      <div class="details-content">
+        <ul class="list">
+          <li>Panels, podcasts, meetups — add entries with title + link</li>
+          <li>Conference talks — add slides or recordings</li>
+          <li>Articles — add Medium/LinkedIn posts</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <aside class="card">
+    <div class="section-title">
+      <h2>Right now</h2>
+      <span>what I’m looking for</span>
+    </div>
+    <p>
+      Roles where product is expected to lead outcomes (growth, retention, revenue, or step-change capability),
+      and where I can build teams that learn fast and ship with confidence.
+    </p>
+
+    <div class="tagrow" aria-label="Role fit">
+      <span class="tag">Group PM</span>
+      <span class="tag">Head of Product</span>
+      <span class="tag">Growth / CX</span>
+      <span class="tag">Payments</span>
+      <span class="tag">Marketplace</span>
+    </div>
+
+    <hr class="sep" />
+
+    <p style="margin-bottom:12px;">
+      Prefer to start from outcomes? Go to Work and skim the highlights.
+    </p>
+    <a class="btn secondary" href="work.html">View Work →</a>
+  </aside>
+</section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Meg Kowalew • Built for GitHub Pages</div>
+      <div>
+        <a class="smalllink" href="assets/MegKowalew_CV.pdf" download>CV (PDF)</a>
+        <span aria-hidden="true"> · </span>
+        <a class="smalllink" href="contact.html">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/main.js" defer></script>
 </body>
 </html>

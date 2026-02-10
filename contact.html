@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meg Kowalew — Contact</title>
+  <meta name="description" content="Get in touch with Meg Kowalew." />
+  <meta name="color-scheme" content="dark light">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-title">
+          <b>Meg Kowalew</b>
+          <span>Product leader • SaaS • Marketplaces</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="pill" data-nav href="index.html">About</a>
+        <a class="pill" data-nav href="work.html">Work</a>
+        <a class="pill" data-nav href="contact.html">Contact</a>
+        <a class="btn" href="assets/MegKowalew_CV.pdf" download>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3v10m0 0l4-4m-4 4l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Download CV
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+<section class="hero">
+  <div class="hero-grid">
+    <div class="avatar">
+      <img src="assets/profile-placeholder.svg" alt="Profile photo placeholder" />
+    </div>
+
+    <div>
+      <div class="kicker">Contact</div>
+      <h1>Let’s talk.</h1>
+      <p class="lede">
+        For roles, advisory, or speaking invitations—email is best. Phone is available if you prefer a quick chat.
+      </p>
+      <div class="tagrow">
+        <a class="btn secondary" href="assets/MegKowalew_CV.pdf" download>Download CV</a>
+        <a class="pill" href="work.html">View Work</a>
+      </div>
+    </div>
+
+    <aside class="quick">
+      <h3>Fastest</h3>
+      <ul>
+        <li>Email for intros & scheduling</li>
+        <li>LinkedIn for context</li>
+        <li>Phone for quick alignment</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="card">
+  <div class="section-title">
+    <h2>Details</h2>
+    <span>no form (by design)</span>
+  </div>
+
+  <div class="contact-row">
+    <div class="contact-item">
+      <b>Email</b>
+      <button class="pill mono" data-reveal-email type="button" aria-label="Reveal email">Click to reveal</button>
+      <div class="meta" style="margin-top:8px; color: var(--muted-2); font-size: 13px;">
+        Best for: opportunities, intros, speaking requests.
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <b>Phone</b>
+      <button class="pill mono" data-reveal-phone type="button" aria-label="Reveal phone number">Click to reveal</button>
+      <div class="meta" style="margin-top:8px; color: var(--muted-2); font-size: 13px;">
+        Light scraper deterrent: number renders only after click.
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <b>LinkedIn</b>
+      <a class="pill" href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">Add your LinkedIn URL</a>
+      <div class="meta" style="margin-top:8px; color: var(--muted-2); font-size: 13px;">
+        Replace the placeholder with your actual profile link.
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <b>Location</b>
+      <span class="pill">Melbourne, Australia</span>
+      <div class="meta" style="margin-top:8px; color: var(--muted-2); font-size: 13px;">
+        Available for hybrid roles; open to other arrangements.
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep" />
+
+  <p style="color: var(--muted); margin: 0;">
+    Prefer a single link to share? Use <span class="kbd">/contact</span> and the CV button in the top nav.
+  </p>
+</section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Meg Kowalew • Built for GitHub Pages</div>
+      <div>
+        <a class="smalllink" href="assets/MegKowalew_CV.pdf" download>CV (PDF)</a>
+        <span aria-hidden="true"> · </span>
+        <a class="smalllink" href="contact.html">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
